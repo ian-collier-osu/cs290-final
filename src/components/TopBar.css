@@ -1,0 +1,22 @@
+.navbar {
+  min-height: 120px;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 120px;
+  line-height: 120px;
+}
+
+.bu-nav-right {
+    margin-right: 10%;
+}
+
+.bu-nav-left {
+    margin-left: 10%;
+}
+
+.nav-link {
+    margin-left: 10px;
+    margin-right: 30px;
+}

@@ -1,26 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import TopBar from './components/TopBar.js';
+import HomeBody from './pages/HomeBody.js';
+import SolutionsBody from './pages/SolutionsBody.js';
+import PricingBody from './pages/PricingBody.js';
+import ContactBody from './pages/ContactBody.js';
+import EnterpriseBody from './pages/EnterpriseBody.js';
+import NotFoundBody from './pages/404.js';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <div>
+            <TopBar/>
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path="/" component={HomeBody} />
+                    <Route path="/solutions" component={SolutionsBody} />
+                    <Route path="/pricing" component={PricingBody} />
+                    <Route path="/enterprise" component={EnterpriseBody} />
+                    <Route path="/contact" component={ContactBody} />
+                    <Route component={NotFoundBody} />
+                </Switch>
+            </BrowserRouter>
+        </div>
     );
   }
 }
