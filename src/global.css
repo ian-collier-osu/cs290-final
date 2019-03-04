@@ -12,3 +12,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.jumbotron {
+    margin-bottom: 0px;
+}
+
+.btn-primary  {
+  background-color: #E67817;
+  border-color: #E67817;
+}
+
+.btn-primary:hover  {
+  background-color: #E66B00;
+  border-color: #E66B00;
+}
+
+:root {
+    --primary: #E67817;
+}
+
+
+.btn-outline-primary {
+  color: #E67817;
+  border-color: #E67817;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #E67817;
+    border-color: #E67817;
+}

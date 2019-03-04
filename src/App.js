@@ -5,7 +5,6 @@ import TopBar from './components/TopBar.js';
 import HomeBody from './pages/HomeBody.js';
 import SolutionsBody from './pages/SolutionsBody.js';
 import PricingBody from './pages/PricingBody.js';
-import ContactBody from './pages/ContactBody.js';
 import EnterpriseBody from './pages/EnterpriseBody.js';
 import NotFoundBody from './pages/404.js';
 
@@ -20,7 +19,6 @@ class App extends Component {
                     <Route path="/solutions" component={SolutionsBody} />
                     <Route path="/pricing" component={PricingBody} />
                     <Route path="/enterprise" component={EnterpriseBody} />
-                    <Route path="/contact" component={ContactBody} />
                     <Route component={NotFoundBody} />
                 </Switch>
             </BrowserRouter>

@@ -4,15 +4,18 @@
 
 .navbar-brand {
   padding: 0 15px;
+  margin-left: 8%;
   height: 120px;
   line-height: 120px;
 }
 
 .bu-nav-right {
+  padding-top: 10px;
     margin-right: 10%;
 }
 
 .bu-nav-left {
+    padding-top: 10px;
     margin-left: 10%;
 }
 
