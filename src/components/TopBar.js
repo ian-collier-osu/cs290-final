@@ -20,7 +20,7 @@ class TopBar extends Component {
                     <Nav.Link href="/enterprise">Enterprise</Nav.Link>
                 </Nav>
                 <Nav className="ml-auto bu-nav-right">
-                    <Button href="/solutions" variant="outline-primary">Download Now</Button>
+                    <Button href="/download" variant="outline-primary">Download Now</Button>
                 </Nav>
         </Navbar>
     );

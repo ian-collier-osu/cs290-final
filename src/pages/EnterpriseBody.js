@@ -13,31 +13,31 @@ class EnterpriseBody extends Component {
             <Container>
                 <Row>
                     <Col>
-                    <Form>
+                    <Form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php">
                     <Form.Label>Believe BigUpload is right for your company? Contact us today:</Form.Label>
-                    <Form.Group controlId="formBasicEmail">
-                        <Form.Control placeholder="First Name" />
+                    <Form.Group>
+                        <Form.Control name="firstname" placeholder="First Name" />
                     </Form.Group>
 
-                    <Form.Group controlId="formBasicEmail">
-                        <Form.Control placeholder="Last Name" />
+                    <Form.Group>
+                        <Form.Control name="lastname" placeholder="Last Name" />
                     </Form.Group>
 
-                    <Form.Group controlId="formBasicEmail">
-                        <Form.Control placeholder="Company Name" />
+                    <Form.Group>
+                        <Form.Control name="companyname" placeholder="Company Name" />
                     </Form.Group>
 
-                    <Form.Group controlId="formBasicEmail">
-                        <Form.Control type="email" placeholder="Email Address" />
+                    <Form.Group>
+                        <Form.Control name="emailaddr" type="email" placeholder="Email Address" />
                     </Form.Group>
 
-                    <Form.Group controlId="formBasicEmail">
-                        <Form.Control placeholder="Phone #" />
+                    <Form.Group>
+                        <Form.Control name="phonenum" placeholder="Phone #" />
 
                     </Form.Group>
 
-                    <Form.Group controlId="exampleForm.ControlTextarea1">
-                        <Form.Control as="textarea" rows="4" placeholder="Additional Comments" />
+                    <Form.Group>
+                        <Form.Control name="comments" as="textarea" rows="4" placeholder="Additional Comments" />
                         <Form.Text className="text-muted">
                           We'll be in contact within one business day.
                         </Form.Text>
@@ -47,6 +47,12 @@ class EnterpriseBody extends Component {
                     Conact Me
                     </Button>
                     </Form>
+                    </Col>
+                </Row>
+                <hr/>
+                <Row >
+                    <Col className="text-center">
+                        <h5>Or email us at <a href="mailto:enterprise@big.upload" target="_top">enterprise@big.upload</a></h5>
                     </Col>
                 </Row>
             </Container>

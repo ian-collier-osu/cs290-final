@@ -36,7 +36,13 @@ class SolutionsBody extends Component {
                     <br/>
                     <img src="database.png" height="160px"/>
                     </Col>
-                    <Col sm={8}> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Col>
+                    <Col sm={8}>
+                        <ul>
+                          <li>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</li>
+                          <li>And more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
+                          <li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</li>
+                      </ul>
+                    </Col>
                 </Row>
             </Container>
         </Jumbotron>

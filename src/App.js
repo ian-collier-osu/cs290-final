@@ -6,12 +6,13 @@ import HomeBody from './pages/HomeBody.js';
 import SolutionsBody from './pages/SolutionsBody.js';
 import PricingBody from './pages/PricingBody.js';
 import EnterpriseBody from './pages/EnterpriseBody.js';
+import DownloadBody from './pages/DownloadBody.js';
 import NotFoundBody from './pages/404.js';
 
 class App extends Component {
   render() {
     return (
-        <div>
+        <div className="App">
             <TopBar/>
             <BrowserRouter>
                 <Switch>
@@ -19,6 +20,7 @@ class App extends Component {
                     <Route path="/solutions" component={SolutionsBody} />
                     <Route path="/pricing" component={PricingBody} />
                     <Route path="/enterprise" component={EnterpriseBody} />
+                    <Route path="/download" component={DownloadBody} />
                     <Route component={NotFoundBody} />
                 </Switch>
             </BrowserRouter>
